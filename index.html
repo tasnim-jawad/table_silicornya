@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="./output/tailwind.css">
+</head>
+<body class="poppins-400">
+    <!-- header section start -->
+    <section id="header" class="bgGray">
+        <div class="grid gap-3 px-4 py-3  md:grid-cols-12 md:gap-[1.875rem] md:px-6 md:py-4 lg:px-[3.125rem] lg:py-[1.625rem]">
+            <div class="md:col-span-7 lg:col-span-8 xl:col-span-9 ">
+                <div class="relative">
+                    <input class="rounded-[.5rem] w-[99%] py-[0.688rem] pl-[3rem] pr-[1rem]" type="search" name="" id="" placeholder="Search here...">
+                    <div class="absolute w-[1.2rem] h-[1.2rem] left-[1.15rem] inset-y-0 my-auto">
+                        <img src="./images/searchGlass.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:col-span-5 lg:col-span-4 xl:col-span-3 grid grid-cols-5"> 
+                <!-- language dropdown  -->
+                <div class="col-span-2 flex flex-wrap items-center justify-evenly ">
+                    <div ><img src="./images/United.png" alt=""></div>
+                    <h3 class="poppins-600">Eng(US)</h3>
+                    <div class="ml-3"><img src="./images/downArrow.png" alt=""></div>
+                </div >
+                <!-- language dropdown  -->
+                <!-- admin dropdown  -->
+                <div class="col-span-3 flex flex-wrap items-center justify-evenly ml-4"> 
+                    <div><img src="./images/admin.png" alt=""></div>
+                    <div>
+                        <h5 class="poppins-500">Mushfiq</h5>
+                        <h5 class="poppins-400 text-[#737791]">Admin</h5>
+                    </div>
+                    <div class="ml-[1.625rem]"><img src="./images/downArrow.png" alt="" srcset=""></div>
+                </div>
+                <!-- language dropdown  -->
+            </div>
+        </div>
+    </section>
+    <!-- header section start -->
+
+    <div class="px-4 py-5 mb-4 md:mb-0 md:px-6 lg:px-[3.156rem]"><h1 class="poppins-600 text-3xl md:text-4xl md:leading-[3.15rem]">Manage Users</h1></div>
+    
+    <div class="px-4 md:px-5 lg:px-[3.125rem] py-2">
+        <div class="flex flex-wrap flex-col justify-center items-start sm:flex-row sm:justify-between sm:items-center">
+            <div >
+                <h3 class="poppins-500 text-[#161616] text-[1.5rem] leading-[2.1rem] mb-2">All User</h3>
+                <!-- show entries start -->
+                <div class="flex flex-wrap justify-between items-center py-2">
+                    <h6 class="text-base poppins-400 text-[#222222]">Show</h6>
+                    <div class="w-[2.85rem] h-[1.563rem] mx-[.75rem] relative">
+                        <input class="w-full border-[.5px] border-[#999999] rounded-[.25rem] inter-400 text-xs px-2 py-1"  type="text" value="20">
+                        <div class="absolute top-[.45rem] right-[.5rem]">
+                            <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.62746 0.789487L0.0806134 3.59793C0.0281034 3.68887 0.000319266 3.79196 2.52462e-05 3.89697C-0.000268774 4.00198 0.0269376 4.10523 0.0789375 4.19646C0.130938 4.28769 0.205919 4.36371 0.296421 4.41696C0.386923 4.47022 0.489792 4.49885 0.594793 4.5H5.68848C5.79348 4.49885 5.89635 4.47022 5.98685 4.41696C6.07735 4.36371 6.15233 4.28769 6.20433 4.19646C6.25633 4.10523 6.28354 4.00198 6.28325 3.89697C6.28295 3.79196 6.25517 3.68887 6.20266 3.59793L3.65582 0.789487C3.60221 0.701116 3.52674 0.628053 3.43667 0.577346C3.34661 0.526639 3.24499 0.5 3.14164 0.5C3.03828 0.5 2.93666 0.526639 2.8466 0.577346C2.75654 0.628053 2.68106 0.701116 2.62746 0.789487Z" fill="#222222" fill-opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <div class="absolute bottom-[.45rem] right-[.5rem]">
+                            <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.65579 4.21051L6.20264 1.40207C6.25515 1.31113 6.28293 1.20804 6.28322 1.10303C6.28352 0.998021 6.25631 0.894768 6.20431 0.803539C6.15231 0.712311 6.07733 0.636289 5.98683 0.583036C5.89633 0.529782 5.79346 0.501154 5.68846 0.5L0.594771 0.5C0.48977 0.501154 0.386901 0.529782 0.296399 0.583035C0.205897 0.636288 0.130915 0.712311 0.0789154 0.803539C0.0269154 0.894767 -0.000291041 0.998021 2.68116e-06 1.10303C0.000296881 1.20803 0.0280812 1.31113 0.080591 1.40207L2.62743 4.21051C2.68104 4.29888 2.75651 4.37195 2.84658 4.42265C2.93664 4.47336 3.03826 4.5 3.14161 4.5C3.24497 4.5 3.34658 4.47336 3.43665 4.42265C3.52671 4.37195 3.60219 4.29888 3.65579 4.21051Z" fill="#222222" fill-opacity="0.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h6 class="text-base inter-400 text-[#222222]">entries</h6>
+                </div>
+                <!-- show entries end -->
+            </div>
+            <!-- user name search -->
+            <div class="flex flex-wrap justify-start items-center w-full mt-4 sm:mt-0 sm:w-auto">
+                <input class="px-4 py-2 w-[85%] border border-[#0D0D10] rounded-l poppins-400 text-sm sm:w-[20rem] md:w-[25rem]" type="text" placeholder="User Name/ Email Address">
+                <button class="bg-[#0D0D10] p-2 rounded-r h-full"><a class="" href="#"><img class="" src="./images/SearchIcon.png" alt=""></a></button>
+            </div>
+            <!-- user name search -->
+        </div>
+    </div>
+    <!-- table section start  -->
+    <div class="mt-5 mb-20 mx-4 md:mx-6 lg:mx-[3.125rem] ">
+        <div class="rounded shadow-md overflow-x-auto">
+            <table class="text-start w-[95.75rem] 2xl:w-full">
+                <thead class="">
+                    <tr class="bgGray">
+                        <th class="w-[6.25rem]">Use ID</th>
+                        <th class="w-[6.25rem]">User</th>
+                        <th class="w-[9.25rem]">User Name</th>
+                        <th class="w-[20.625rem]">Email-Phone</th>
+                        <th class="w-[9.25rem]">Balance</th>
+                        <th class="w-[9.25rem]">Country</th>
+                        <th class="w-[15.625rem]">Joined At</th>
+                        <th class="w-[9.25rem]">Activity</th>
+                        <th class="w-[9.25rem]">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>524358</td>
+                        <td class="py-0"><img class="w-[3.75rem] h-[3.75rem] mx-auto block" src="./images/user01.svg" alt=""></td>
+                        <td>Robert Fox</td>
+                        <td>sara.cruz@example.com<br>01925058125</td>
+                        <td>$500</td>
+                        <td>BD</td>
+                        <td>2023-02-20 04:27 AM<br>7 hours ago</td>
+                        <td><span class="text-sm px-2 py-1 inline-block rounded-full bg-[#63ad6f]/[0.1] text-[#63AD6F]">Active</span></td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>524358</td>
+                        <td class="py-0"><img class="w-[3.75rem] h-[3.75rem] mx-auto block" src="./images/user2.png" alt=""></td>
+                        <td>Robert Fox</td>
+                        <td>sara.cruz@example.com<br>01925058125</td>
+                        <td>$500</td>
+                        <td>BD</td>
+                        <td>2023-02-20 04:27 AM<br>7 hours ago</td>
+                        <td><span class="text-sm px-2 py-1 inline-block rounded-full bg-[#F76868]/[0.1] text-[#F76868]">Inactive</span></td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>524358</td>
+                        <td class="py-0"><img class="w-[3.75rem] h-[3.75rem] mx-auto block" src="./images/user3.png" alt=""></td>
+                        <td>Robert Fox</td>
+                        <td>sara.cruz@example.com<br>01925058125</td>
+                        <td>$500</td>
+                        <td>BD</td>
+                        <td>2023-02-20 04:27 AM<br>7 hours ago</td>
+                        <td><span class="text-sm px-2 py-1 inline-block rounded-full bg-[#63ad6f]/[0.1] text-[#63AD6F]">Active</span></td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>524358</td>
+                        <td class="py-0"><img class="w-[3.75rem] h-[3.75rem] mx-auto block" src="./images/user4.png" alt=""></td>
+                        <td>Robert Fox</td>
+                        <td>sara.cruz@example.com<br>01925058125</td>
+                        <td>$500</td>
+                        <td>BD</td>
+                        <td>2023-02-20 04:27 AM<br>7 hours ago</td>
+                        <td><span class="text-sm px-2 py-1 inline-block rounded-full bg-[#63ad6f]/[0.1] text-[#63AD6F]">Active</span></td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>524358</td>
+                        <td class="py-0"><img class="w-[3.75rem] h-[3.75rem] mx-auto block" src="./images/user5.png" alt=""></td>
+                        <td>Robert Fox</td>
+                        <td>sara.cruz@example.com<br>01925058125</td>
+                        <td>$500</td>
+                        <td>BD</td>
+                        <td>2023-02-20 04:27 AM<br>7 hours ago</td>
+                        <td><span class="text-sm px-2 py-1 inline-block rounded-full bg-[#63ad6f]/[0.1] text-[#63AD6F]">Active</span></td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>524358</td>
+                        <td class="py-0"><img class="w-[3.75rem] h-[3.75rem] mx-auto block" src="./images/user6.png" alt=""></td>
+                        <td>Robert Fox</td>
+                        <td>sara.cruz@example.com<br>01925058125</td>
+                        <td>$500</td>
+                        <td>BD</td>
+                        <td>2023-02-20 04:27 AM<br>7 hours ago</td>
+                        <td><span class="text-sm px-2 py-1 inline-block rounded-full bg-[#63ad6f]/[0.1] text-[#63AD6F]">Active</span></td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>524358</td>
+                        <td class="py-0"><img class="w-[3.75rem] h-[3.75rem] mx-auto block" src="./images/user7.png" alt=""></td>
+                        <td>Robert Fox</td>
+                        <td>sara.cruz@example.com<br>01925058125</td>
+                        <td>$500</td>
+                        <td>BD</td>
+                        <td>2023-02-20 04:27 AM<br>7 hours ago</td>
+                        <td><span class="text-sm px-2 py-1 inline-block rounded-full bg-[#63ad6f]/[0.1] text-[#63AD6F]">Active</span></td>
+                        <td>...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- table section start  -->
+
+</body>
+</html>

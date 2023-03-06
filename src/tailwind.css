@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    :root {
+        
+        --bg-gray: #F1F3F7;
+        --color-inactive:#F76868;
+        --bg-inactive:rgba(247, 104, 104, 0.1);
+        --color-active:#63AD6F;
+        --bg-active:rgba(99, 173, 111, 0.1);
+        --poppins-400:'poppins-400';
+        --poppins-500:'poppins-500';
+        --poppins-600:'poppins-600';
+        --inter-400:'inter-400';
+        --inter-500:'inter-500';
+        --inter-600:'inter-600';
+    }
+
+    @font-face {
+        font-family: 'poppins-400';
+        src: url('../fonts/Poppins/Poppins-Regular.ttf');
+    }
+    @font-face {
+        font-family: 'poppins-500';
+        src: url('../fonts/Poppins/Poppins-Medium.ttf');
+    }
+    @font-face {
+        font-family: 'poppins-600';
+        src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+    }
+    @font-face {
+        font-family: 'inter-400';
+        src: url('../fonts/Inter/static/Inter-Regular.ttf');
+    }
+    @font-face {
+        font-family: 'inter-500';
+        src: url('../fonts/Inter/static/Inter-SemiBold.ttf');
+    }
+    @font-face {
+        font-family: 'inter-600';
+        src: url('../fonts/Inter/static/Inter-Bold.ttf');
+    }
+    .bgGray{
+        background-color: var(--bg-gray);
+    }
+    .poppins-400{
+        font-family: var(--poppins-400);
+    }
+    .poppins-500{
+        font-family: var(--poppins-500);
+    }
+    .poppins-600{
+        font-family: var(--poppins-600);
+    }
+    .inter-400{
+        font-family: var(--inter-400);
+    }
+    .inter-500{
+        font-family: var(--inter-500);
+    }
+    .inter-600{
+        font-family: var(--inter-600);
+    }
+
+    .balance_shadow{
+        filter:drop-shadow(2px 5px 10px rgba(0, 0, 0, 0.15));
+    }
+
+    
+}
+
+@layer base{
+    th,td{
+        @apply p-4 text-start text-[#222222] text-lg 
+    }
+    th{
+        @apply inter-500 leading-[1.575rem]
+    }
+    td{
+        @apply poppins-400 leading-[1.688rem]
+    }
+}
