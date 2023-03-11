@@ -70,6 +70,34 @@
     .card_shadow{
         box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.15);
     }
+    .dashboard_banner{
+        background-image: url("../images/dashboard_login/curved_banner.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .check_container:hover input ~ .checkmark{
+        background-color: #B8BDBD;
+    }
+    .check_container input ~ .checkmark img{
+        display: none;
+    }
+    /* When the checkbox is checked, add a blue background */
+    .check_container input:checked ~ .checkmark {
+        background-color: #2196F3;
+    }
+    .check_container input:checked ~ .checkmark img{
+        display: block;
+    }
+    
+    /* Show the checkmark when checked */
+    .check_container input:checked ~ .checkmark:after {
+        display: block;
+    }
+    
+    
     
 
     

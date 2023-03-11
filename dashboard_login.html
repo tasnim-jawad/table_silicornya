@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Login</title>
+    <link rel="stylesheet" href="./output/tailwind.css">
+</head>
+<body class="bg-[#EAC975B2] w-full h-full">
+        <div class="bg-black max-w-[600px] mx-auto rounded-lg  ">
+            <div class="dashboard_banner pt-[4.875rem] pb-[4.938rem]">
+                <div class="text-center px-2">
+                    <h2 class="poppins-500 text-[2rem] leading-[2.6rem] mb-2">Welcome To Company</h2>
+                    <h2 class="text-lg leading-[1.463rem]">admin login to Company dashboard</h2>
+                </div>
+            </div>
+            <form action="">
+                <div class="px-[3.125rem] pt-[4.063rem] pb-[6rem]">
+                    <div class="space-y-5">
+                        <div class="flex flex-col gap-2">
+                            <label class="text-base leading-[1.3rem] text-[#999999] inter-500" for="Username">Username<span class="text-[#D3AC46]">*</span></label>
+                            <input class="px-4 py-2.5 border-[0.031rem] border-[#fff] rounded poppins-400 text-lg leading-[1.463rem] text-[#fff] bg-transparent" type="text" name="Username">
+                        </div>
+                        <div class="flex flex-col gap-2 ">
+                            <label class="text-base leading-[1.3rem] text-[#999999] inter-500" for="Username">Password<span class="text-[#D3AC46]">*</span></label>
+                            <input class="px-4 py-2.5 border-[0.031rem] border-[#fff] rounded poppins-400 text-lg leading-[1.463rem] text-[#fff] bg-transparent" type="password" name="Username">
+                        </div>
+                        <div class="flex flex-wrap justify-between items-center">
+                            <div>
+                                <label class="check_container block relative cursor-pointer text-[#fff] poppins-500 text-base leading-[1.3rem] pl-7">Remember Me
+                                    <input class="hidden" type="checkbox">
+                                    <span class="checkmark absolute top-0 left-0 h-5 w-5 bg-[#262626] border border-[#C0C0C0] rounded-[.188rem]"><img src="./images/dashboard_login/check_tick.svg" alt=""></span>
+                                </label>
+                            </div>
+                            <div>
+                                <a class="poppins-500 text-base leading-[1.3rem] text-white hover:underline hover:underline-offset-2 hover:text-blue-500" href="#">Forget Password?</a>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="w-full bg-[#D3AC46] inter-600 text-base leading-[1.3rem] tracking-[2%] text-[#222222] p-2.5">LOGIN</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+</body>
+</html>
